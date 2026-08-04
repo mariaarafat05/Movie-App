@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie-App</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+<body>
+
+<div class="phone" id="home-page">
+
+
+<section class="hero" id="hero-trailer">
+
+    <div class="hero-text">
+
+        <h4>NOW PLAYING</h4>
+        <h1 id="movie-title">The Legend of Zorro</h1>
+        <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <span id="movie-rating">6.0</span>
+        <span id="movie-year">2005</span>
+        <span id="movie-duration">2h 10m</span>
+        <span id="movie-age">PG +18</span>
+        </div>
+        <p id="movie-description" class="description">The Legend of Zorro is a 2005 
+            American Western swashbuckler film directed by Martin Campbell.
+        </p>
+
+        <div class="buttons">
+            <button class="btn" id="trailer-btn">
+                <i class="fa-solid fa-play"></i>
+                Play Trailer
+            </button>
+            
+            <button class="btn1" id="details-btn">View Details</button>
+        </div>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    
+</section>
+
+
+<div class="modal" id="movie-modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <img id="modal-image" src="" alt="Movie">
+
+        <h2 id="modal-title"></h2>
+
+        <div class="modal-rating">
+            <span id="modal-rating"></span>
+            <span id="modal-year"></span>
+            <span id="modal-duration"></span>
+        </div>
+
+        <p id="modal-description"></p>
+
+        <a id="watch-trailer" class="watch-trailer" target="_blank">
+            <i class="fa-solid fa-play"></i>
+            Watch Trailer
+        </a>
+
+    </div>
+</div>
+
+
+<section class="popular-movies">
+    <div class="popular-text">
+        <h1>Popular Movies</h1>
+        <a href="#">View All</a>
+    </div>
+
+    <div class="movie-cards" id="popular-movies">
+
+    </div>
+</section>
+
+
+
+<section class="top-rated">
+    <div class="top-text">
+        <h1>Top Rated</h1>
+        <a href="#">View All</a>
+    </div>
+
+    <div class="movie-cards" id="top-rated-movies">
+
+
+    </div>
+</section>
+
+
+<section class="navigation">
+
+
+    <div class="icons">
+
+    <a href="#" class="icon active" id="home-icon">
+        <i class="fa-solid fa-house"></i>
+        <p>Home</p>
+    </a>
+
+    <a href="#"  class="icon"  id="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Search</p>
+    </a>
+
+    <a href="#"  class="icon" id="favorites-icon">
+        <i class="fa-regular fa-heart"></i>
+        <p>Favorites</p>
+    </a>
+
+    <a href="#"  class="icon">
+        <i class="fa-regular fa-circle-user"></i>
+        <p>Profile</p>
+    </a>
+
+    </div>
+
+
+</section>
+
+
+</div>
+
+
+<section class="search-page" id="search-page">
+
+    <h1>Search</h1>
+
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="search movie...">
+    </div>
+
+    <div class="search-results">
+
+    </div>
+</section>
+
+
+<section class="favorites-page" id="favorites-page">
+
+    <h1>Favorites</h1>
+
+    <div class="favorites-list" id="favorites-movies">
+
+    </div>
+</section>
+
+
+<!--  JAVASCRIPT  -->
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
